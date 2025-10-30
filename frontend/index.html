@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sciqus Internship - Frontend Demo</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <button id="hamburger" class="hamburger" aria-label="Open menu">☰</button>
+    <h1 class="brand">Sciqus Demo</h1>
+    <nav class="top-nav">
+      <a href="#" class="nav-link">Home</a>
+      <a href="#" class="nav-link">Courses</a>
+      <a href="#" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar" aria-hidden="false">
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">My Courses</a></li>
+          <li><a href="#">Apply</a></li>
+          <li><a href="#">Profile</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main" id="main">
+      <!-- Container 1: image carousel -->
+      <section class="container card carousel" id="c1">
+        <div class="slides">
+          <img src="assets/slide1.svg" alt="slide 1">
+          <img src="assets/slide2.svg" alt="slide 2">
+          <img src="assets/slide3.svg" alt="slide 3">
+        </div>
+        <div class="dots" id="dots"></div>
+      </section>
+
+      <!-- Container 2: text block -->
+      <section class="container card" id="c2">
+        <h2>About This Project</h2>
+        <p>This is a demo frontend for the Sciqus internship submission. It implements a responsive layout with a desktop sidebar and a mobile hamburger menu, plus six containers as required.</p>
+      </section>
+
+      <!-- Container 3: interactive slider -->
+      <section class="container card" id="c3">
+        <h3>Interactive Slider</h3>
+        <div class="mini-slider">
+          <button id="prev" class="small-btn" aria-label="Previous">‹</button>
+          <div class="slide-window"><img id="mini-img" src="assets/thumb1.svg" alt="thumb"></div>
+          <button id="next" class="small-btn" aria-label="Next">›</button>
+        </div>
+      </section>
+
+      <!-- Container 4: static content -->
+      <section class="container card" id="c4">
+        <h3>Resources</h3>
+        <ul>
+          <li>Backend API: /backend/</li>
+          <li>Test Case Report (to be added)</li>
+        </ul>
+      </section>
+
+      <!-- Container 5: call to actions -->
+      <section class="container card" id="c5">
+        <button class="btn primary">Explore Courses</button>
+        <button class="btn secondary">Apply Now</button>
+      </section>
+
+      <!-- Container 6: animated content -->
+      <section class="container card" id="c6">
+        <h3>Animated Preview</h3>
+        <div class="animated-box" id="animated-box">🚀</div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>Made for Sciqus internship submission.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
